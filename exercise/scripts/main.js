@@ -16,6 +16,8 @@ window.addEventListener('DOMContentLoaded', function() {
         card.classList.add('is-selected');
         selectedCards.push(card)
       }
+      setTimeout(() => {
+        
       
 
       // If we have selected two cards, see if they match.
@@ -39,9 +41,10 @@ window.addEventListener('DOMContentLoaded', function() {
       }
 
       // If we've matched all the cards, display a message.
-      if (matchedCards.length > cards.length) {
+      if (matchedCards.length == cards.length) {
         alert('You matched all the cards, nice job!');
       }
+    }, 1000);
     });
   });
 });
